@@ -5,23 +5,27 @@
 - **Réels** : `float`, `double`, `long double`
 - **Caractères** : `char`, chaîne de caractères
 - **Booléens** : `bool`
+<hr>
 
 #### **2. Déclaration de Variables**
 ```c
 Type Nom_var = valeur;
 const Type Nom_const = valeur;
 ```
+<hr>
 
 #### **3. Entrée/Sortie**
 ```c
 printf("format", variables); // Écriture sur la sortie standard
 scanf("format", &variables); // Lecture des variables
 ```
+<hr>
 
 #### **4. Caractères d'Échappement**
 - **`\n`** : Retour à la ligne
 - **`\t`** : Tabulation horizontale
 - **`\\"`, `\'`, `\\`** : Affichage de guillemets, apostrophes ou antislash
+<hr>
 
 #### **5. Opérateurs**
 - **Arithmétiques** : `+`, `-`, `*`, `/`, `%`
@@ -29,6 +33,7 @@ scanf("format", &variables); // Lecture des variables
 - **Incrémentation/Decrémentation** : `++`, `--`
 - **Comparaison** : `==`, `<`, `>`, `<=`, `>=`, `!=`
 - **Logiques** : `&&`, `||`, `!`
+<hr>
 
 #### **6. Structures Conditionnelles**
 ```c
@@ -66,6 +71,7 @@ switch(expression) {
         break;
 }
 ```
+<hr>
 
 #### **7. Structures Répétitives**
 ```c
@@ -84,6 +90,7 @@ do {
     instructions;
 } while (condition);
 ```
+<hr>
 
 #### **8. Contrôle des Boucles**
 ```c
@@ -93,6 +100,7 @@ break;
 // continue : passe à l'itération suivante
 continue;
 ```
+<hr>
 
 #### **9. Tableaux**
 ```c
@@ -102,6 +110,7 @@ Type Nom_Tab[size];
 // Tableau à deux dimensions
 Type Nom_Tab[nbr_lignes][nbr_colonnes];
 ```
+<hr>
 
 #### **10. Chaînes de Caractères**
 - Traitées comme des tableaux de `char`, terminées par `\0`.
@@ -114,6 +123,7 @@ Type_retour Nom_fonction(arguments) {
     return résultat;
 }
 ```
+<hr>
 
 #### **12. Pointeurs**
 ```c
@@ -124,6 +134,7 @@ Type *pointeur = &variable;
 & // pour obtenir l'adresse
 * // pour accéder au contenu de l'adresse
 ```
+<hr>
 
 #### **13. Allocation Dynamique de la Mémoire**
 ```c
@@ -139,6 +150,7 @@ pointeur = (Type *) realloc(pointeur, nouvelle_taille * sizeof(Type));
 // Libération de la mémoire
 free(pointeur);
 ```
+<hr>
 
 #### **14. Structures**
 ```c
