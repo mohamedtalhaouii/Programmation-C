@@ -14,13 +14,14 @@
 12. [Pointeurs](#12-pointeurs)
 13. [Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)
 14. [Structures](#14-structures)
+15. [Bibliothèques](15-bibliothèques)
 
 <hr>
 
 ### **1. Types de Données**
 - **Entiers** : `int`, `long`
 - **Réels** : `float`, `double`, `long double`
-- **Caractères** : `char`, chaîne de caractères
+- **Caractères** : `char`
 - **Booléens** : `bool`
 <hr>
 
@@ -129,9 +130,18 @@ Type Nom_Tab[nbr_lignes][nbr_colonnes];
 ```
 <hr>
 
+
 ### **10. Chaînes de Caractères**
-- Traitées comme des tableaux de `char`, terminées par `\0`.
-- **Fonctions courantes** : `strlen()`, `strcpy()`, `strcat()`, `strcmp()`
+En C, les chaînes de caractères sont représentées par des **tableaux de caractères** et se terminent par un caractère nul (`'\0'`).
+
+- **Fonctions de `<string.h>`** :
+  - `strlen` : Longueur d'une chaîne.
+  - `strcpy`, `strncpy` : Copie de chaînes.
+  - `strcat`, `strncat` : Concaténation de chaînes.
+  - `strcmp`, `strncmp` : Comparaison de chaînes.
+  - `strchr` : Trouve une occurrence d'un caractère.
+  - `strstr` : Trouve une sous-chaîne.
+<hr>
 
 ### **11. Fonctions**
 ```c
@@ -177,6 +187,32 @@ struct Nom_structure {
     // ...
 } variables;
 ```
+<hr>
+
+### **15. Bibliothèques**
+Les bibliothèques standard du C fournissent des fonctions pour de nombreuses tâches courantes.
+
+- **`<stdio.h>`** : Entrée/sortie standard.
+  - Fonctions : `printf`, `scanf`, `fopen`, `fclose`, etc.
+
+- **`<stdlib.h>`** : Gestion de la mémoire, nombres aléatoires et conversions.
+  - Fonctions : `malloc`, `free`, `rand`, `exit`, etc.
+
+- **`<string.h>`** : Manipulation des chaînes de caractères.
+  - Fonctions : `strlen`, `strcpy`, `strcat`, `strcmp`, etc.
+
+- **`<math.h>`** : Opérations mathématiques avancées.
+  - Fonctions : `pow`, `sqrt`, `sin`, `cos`, `log`, etc.
+
+- **`<ctype.h>`** : Classification et manipulation des caractères.
+  - Fonctions : `isalpha`, `isdigit`, `toupper`, `tolower`, etc.
+
+- **`<time.h>`** : Gestion du temps et des dates.
+  - Fonctions : `time`, `clock`, `difftime`, `strftime`, etc.
+
+- **`<stdbool.h>`** : Type booléen (`true`, `false`).
+
+- **`<limits.h>`** et **`<float.h>`** : Définit les limites des types numériques.
 
 <hr>
 
