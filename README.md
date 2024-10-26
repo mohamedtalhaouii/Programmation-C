@@ -14,7 +14,7 @@
 12. [Pointeurs](#12-pointeurs)
 13. [Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)
 14. [Structures](#14-structures)
-15. [Bibliothèques](15-bibliothèques)
+15. [Bibliothèques](#15-bibliothèques)
 
 <hr>
 
