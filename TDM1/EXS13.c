@@ -6,7 +6,7 @@ int main()
     int N, S=0;
     while (N != 0)
     {
-        printf("\nPour arrete tapez !! 0\n");
+        printf("\nPour arrete tapez 0 !!\n");
         printf("Entrer un nombre : ");
         scanf("%d", &N);
         S+=N;
