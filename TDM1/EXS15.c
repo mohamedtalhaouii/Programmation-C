@@ -3,14 +3,16 @@
 
 int main()
 {
-    int N, S=0;
-    while (N != 0)
+    int N;
+    saisir :
+    printf("\nEntrer le mot de passe : ");
+    scanf("%d", &N);
+    if (N != 2005) //Le mot de pass
     {
-        printf("\nPour arrete tapez !! 0\n");
-        printf("Entrer un nombre : ");
-        scanf("%d", &N);
-        S+=N;
+        printf("Le Mot de Passe est Incorrect !!\n");
+        goto saisir;
     }
-    printf("La somme des nombres saisis est : %d", S);
+    printf("Le Mot de Passe est Correct.");
+    
     return 0;
 }
