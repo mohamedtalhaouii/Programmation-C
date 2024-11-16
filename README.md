@@ -42,7 +42,7 @@ scanf("format", &variables); // Lecture des variables
 ### **4. Caractères d'Échappement**
 - **`\n`** : Retour à la ligne
 - **`\t`** : Tabulation horizontale
-- **`\\"`, `\'`, `\\`** : Affichage de guillemets, apostrophes ou antislash
+- **`\\"`, `\'`, `\\`, `\%`** : Affichage de guillemets, apostrophes ou antislash
 <hr>
 
 ### **5. Opérateurs**
