@@ -5,7 +5,7 @@
 int main()
 {
     char A[]= "Mohamed";
-    char B[] = "HelloWorld ";
+    char B[] = "Talhaoui ";
 
     printf("La chaine Source : ");
     puts(A);
