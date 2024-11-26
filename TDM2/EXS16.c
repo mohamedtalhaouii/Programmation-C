@@ -14,11 +14,11 @@ int main()
     {
         printf("elles sont egales");
     } 
-    else if (strcmp(A, B) == 1)
+    else if (strcmp(A, B) > 0)
     {
         printf("plus grandes");
     } 
-    else if (strcmp(A, B) == -1)
+    else if (strcmp(A, B) < 0)
     {
         printf("plus petites");
     }
