@@ -19,10 +19,25 @@
 <hr>
 
 ### **1. Types de Données**
-- **Entiers** : `int`, `long`
-- **Réels** : `float`, `double`, `long double`
-- **Caractères** : `char`
-- **Booléens** : `bool`
+
+| **Type**            | **Taille (en octets)** | **Description**                                                                 |
+|----------------------|-----------------------|---------------------------------------------------------------------------------|
+| `int`               | 4                     | Entier standard, généralement signé (entre -2³¹ et 2³¹-1 sur 32 bits).         |
+| `long`              | 8 (64 bits) ou 4 (32 bits) | Entier long, adapté pour des valeurs plus grandes.                            |
+| `float`             | 4                     | Nombre réel en précision simple (32 bits, ~7 chiffres significatifs).          |
+| `double`            | 8                     | Nombre réel en double précision (64 bits, ~15 chiffres significatifs).         |
+| `long double`       | 8, 10 ou 16           | Nombre réel avec une précision étendue, dépend de l'implémentation.            |
+| `char`              | 1                     | Caractère ou entier de petite taille (valeurs entre -128 et 127 ou 0 à 255).    |
+| `bool`              | 1                     | Type booléen (`true` ou `false`), défini avec `<stdbool.h>`.                    |
+
+
+- **Déterminer l'Intervalle des Types de Données :**
+    - **Pour les types signés :**
+       - L'intervalle est de $`-2^{n-1}`$ à $`2^{n-1} - 1`$, où $`n`$ est le nombre de bits utilisés pour le type.
+    
+    - **Pour les types non signés :**
+       - L'intervalle est de $`0`$ à $`2^n - 1`$, où $`n`$ est le nombre de bits utilisés pour le type.
+
 <hr>
 
 ### **2. Déclaration de Variables**
