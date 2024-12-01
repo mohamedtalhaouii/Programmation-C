@@ -132,6 +132,9 @@ break;
 
 // continue : passe à l'itération suivante
 continue;
+
+// goto : transfère l'exécution vers une étiquette définie dans le programme
+goto;
 ```
 <hr>
 
