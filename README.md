@@ -139,7 +139,7 @@ goto;
 <hr>
 
 ### **9. Tableaux**
-- **Déclaration d'une Tableau :** :
+- **Déclaration d'une Tableau :**
 ```c
 // Tableau à une dimension
 Type Nom_Tab[size];
@@ -147,7 +147,7 @@ Type Nom_Tab[size];
 // Tableau à deux dimensions
 Type Nom_Tab[nbr_lignes][nbr_colonnes];
 ```
-- **Taille d'un Tableau :** :
+- **Taille d'un Tableau :**
 ```c
 // Tableau à une dimension
 int taille = sizeof(Nom_Tab) / sizeof(Nom_Tab[0]);
