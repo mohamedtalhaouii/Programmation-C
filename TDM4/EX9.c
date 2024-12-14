@@ -1,3 +1,5 @@
+// Nom : Mohamed Talhaoui
+// Filière : IIA (S3) | 2024/2025
 #include <stdio.h>
 #include <string.h>
 
