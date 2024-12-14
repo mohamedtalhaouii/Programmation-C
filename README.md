@@ -184,13 +184,13 @@ Type *pointeur = &variable;
 ### **13. Allocation Dynamique de la Mémoire**
 ```c
 // Allocation avec malloc
-Type *pointeur = (Type *) malloc(taille * sizeof(Type));
+Type *pointeur = malloc(taille * sizeof(Type));
 
 // Allocation avec calloc
-Type *pointeur = (Type *) calloc(nbr_elements, sizeof(Type));
+Type *pointeur = calloc(nbr_elements, sizeof(Type));
 
 // Redimensionnement avec realloc
-pointeur = (Type *) realloc(pointeur, nouvelle_taille * sizeof(Type));
+pointeur = realloc(pointeur, nouvelle_taille * sizeof(Type));
 
 // Libération de la mémoire
 free(pointeur);
