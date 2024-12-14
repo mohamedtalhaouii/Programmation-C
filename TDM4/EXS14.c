@@ -8,10 +8,12 @@ int main()
     char *P[] = {"casemiro", "mohamed", "talhaoui", "skhonelaktaf", "abdelkader", "baredlaktaf", "diplomatico", "mip", "ronaldo", "wassingh", "toto"};
     char *tmp;
 
+    int taille = sizeof(P) / sizeof(P[0]);
+
 //-----------------Trie a Bulles--------------------//
-    for (int i = 0; i < strlen(*P) - 1; i++)
+    for (int i = 0; i < taille - 1; i++)
     {
-        for (int j = 0; j < strlen(*P) - i - 1; j++)
+        for (int j = 0; j < taille - i - 1; j++)
         {
             if (strcmp(P[j], P[j + 1]) > 0)
             {
@@ -24,7 +26,7 @@ int main()
 //----------------------------------------------------//
 
     printf("les elements de tableau avec l'order alphabetique sont : \n");
-    for (int i = 0; i < strlen(*P); i++)
+    for (int i = 0; i < taille; i++)
         {
             printf("%s\n", P[i]);
         }
