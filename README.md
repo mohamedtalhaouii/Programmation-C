@@ -142,7 +142,7 @@ goto;
 - **Déclaration d'une Tableau :**
 ```c
 // Tableau à une dimension
-Type Nom_Tab[size];
+Type Nom_Tab[taille];
 
 // Tableau à deux dimensions
 Type Nom_Tab[nbr_lignes][nbr_colonnes];
