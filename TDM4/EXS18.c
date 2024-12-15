@@ -12,11 +12,16 @@ int main()
     printf("Entrer la chaine de caractere : ");
     scanf("%s", P);
 
-    for (int i = 0; i < strlen(P); i++)
+    char *T = malloc(strlen(P) * sizeof(char));
+
+    strcpy(T, P);
+
+    for (int i = 0; i < strlen(T); i++)
     {
-        printf("%c", *(P+i));
+        printf("%c", *(T+i));
     }
     free(P);
+    free(T);
 
     return 0;
 }
