@@ -14,7 +14,12 @@
 12. [Pointeurs](#12-pointeurs)
 13. [Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)
 14. [Structures](#14-structures)
-15. [Bibliothèques](#15-bibliothèques)
+15. [Unions](#15-unions)
+16. [Énumérations](#16-énumérations)
+17. [Types synonymes](#17-types-synonymes)
+18. [Champs de bits](#18-champs-de-bits)
+19. [Taille d'une structure](#19-taille-dune-structure)
+20. [Bibliothèques](#20-bibliothèques)
 
 <hr>
 
