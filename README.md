@@ -233,6 +233,8 @@ free(pointeur);
          struct noeud *suiv;
      };
      ```
+<hr>
+
 ### **15. Unions**
    ```c
    union nom_union {
@@ -258,7 +260,8 @@ free(pointeur);
          ...
      } variables;
      ```
-     
+<hr>
+
 ### **17. Types synonymes**
    ```c
    typedef type_existant nouveau_nom;
@@ -273,6 +276,8 @@ free(pointeur);
      } date;
      ```
 
+<hr>
+
 ### **18. Champs de bits**
    ```c
    struct {
@@ -280,6 +285,7 @@ free(pointeur);
        unsigned int champ2 : nombre_de_bits;
    } variables;
    ```
+<hr>
 
 ### **19. Taille d'une structure**
    ```c
