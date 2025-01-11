@@ -208,16 +208,82 @@ free(pointeur);
 <hr>
 
 ### **14. Structures**
-```c
-struct Nom_structure {
-    Type champ1;
-    Type champ2;
-    // ...
-} variables;
-```
+   ```c
+   struct nom_structure {
+       type1 champ1;
+       type2 champ2;
+   };
+   ```
+
+   - Accès aux champs :
+     ```c
+     variable.champ;  // Accès direct
+     pointeur->champ; // Accès via pointeur
+     ```
+
+   - Structure avec pointeur sur elle-même (liste chaînée) :
+     ```c
+     struct noeud {
+         int val;
+         struct noeud *suiv;
+     };
+     ```
+### **15. Unions**
+   ```c
+   union nom_union {
+       type1 champ1;
+       type2 champ2;
+   };
+   ```
+
+### **16. Énumérations**
+   ```c
+   enum nom_enum {
+       CONST1,
+       CONST2,
+       ...
+   };
+   ```
+
+   - Énumération avec valeurs personnalisées :
+     ```c
+     enum nom_enum {
+         CONST1 = valeur1,
+         CONST2 = valeur2,
+         ...
+     };
+     ```
+     
+### **17. Types synonymes**
+   ```c
+   typedef type_existant nouveau_nom;
+   ```
+
+   - Exemple avec structure :
+     ```c
+     typedef struct {
+         int jour;
+         int mois;
+         int annee;
+     } date;
+     ```
+
+### **18. Champs de bits**
+   ```c
+   struct {
+       unsigned int champ1 : nombre_de_bits;
+       unsigned int champ2 : nombre_de_bits;
+   };
+   ```
+
+### **19. Taille d'une structure**
+   ```c
+   sizeof(nom_structure);
+   ```
+
 <hr>
 
-### **15. Bibliothèques**
+### **20. Bibliothèques**
 Les bibliothèques standard du C fournissent des fonctions pour de nombreuses tâches courantes.
 
 - **`<stdio.h>`** : Entrée/sortie standard.
