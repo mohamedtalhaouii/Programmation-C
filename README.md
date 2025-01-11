@@ -217,7 +217,7 @@ free(pointeur);
    struct nom_structure {
        type1 champ1;
        type2 champ2;
-   };
+   } variables;
    ```
 
    - Accès aux champs :
@@ -247,7 +247,7 @@ free(pointeur);
        CONST1,
        CONST2,
        ...
-   };
+   } variables;
    ```
 
    - Énumération avec valeurs personnalisées :
@@ -256,7 +256,7 @@ free(pointeur);
          CONST1 = valeur1,
          CONST2 = valeur2,
          ...
-     };
+     } variables;
      ```
      
 ### **17. Types synonymes**
@@ -278,12 +278,17 @@ free(pointeur);
    struct {
        unsigned int champ1 : nombre_de_bits;
        unsigned int champ2 : nombre_de_bits;
-   };
+   } variables;
    ```
 
 ### **19. Taille d'une structure**
    ```c
-   sizeof(nom_structure);
+   struct nom_structure {
+        type1 champ1;
+        type2 champ2;
+    } variables;
+
+    printf("Taille de la structure : %zu octets\n", sizeof(variable));
    ```
 
 <hr>
