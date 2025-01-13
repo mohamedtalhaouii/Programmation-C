@@ -240,8 +240,10 @@ free(pointeur);
    union nom_union {
        type1 champ1;
        type2 champ2;
-   };
+   } variables;
    ```
+
+<hr>
 
 ### **16. Énumérations**
    ```c
