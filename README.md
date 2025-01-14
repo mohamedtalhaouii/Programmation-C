@@ -473,7 +473,7 @@ free(pointeur);
    typedef type_existant nouveau_nom;
    ```
 
-   - Exemples :
+  - Exemples :
     ```c
     typedef int Entier;       // Entier est un synonyme de int
     typedef float Reel;       // Reel est un synonyme de float
