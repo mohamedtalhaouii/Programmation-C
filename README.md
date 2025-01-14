@@ -60,9 +60,24 @@ scanf("format", &variables); // Lecture des variables
 <hr>
 
 ### **4. Caractères d'Échappement**
-- **`\n`** : Retour à la ligne
-- **`\t`** : Tabulation horizontale
-- **`\\"`, `\'`, `\\`, `\%`** : Affichage de guillemets, apostrophes, antislash, pourcentage.
+
+| **Séquence** | **Description**                                   | **Valeur ASCII** |
+|--------------|---------------------------------------------------|------------------|
+| `\0`         | Caractère nul (fin de chaîne)                     | 0                |
+| `\a`         | Alarme (bip sonore)                               | 7                |
+| `\b`         | Backspace (retour arrière)                        | 8                |
+| `\t`         | Tabulation horizontale                            | 9                |
+| `\n`         | Nouvelle ligne (line feed)                        | 10               |
+| `\v`         | Tabulation verticale                              | 11               |
+| `\f`         | Saut de page (form feed)                          | 12               |
+| `\r`         | Retour chariot (carriage return)                  | 13               |
+| `\"`         | Guillemet double                                  | 34               |
+| `\'`         | Apostrophe                                        | 39               |
+| `\\`         | Barre oblique inversée                            | 92               |
+| `\?`         | Point d'interrogation (utilisé dans les trigraphes)| 63               |
+| `\xhh`       | Caractère représenté par sa valeur hexadécimale   | Dépend de `hh`   |
+| `\ooo`       | Caractère représenté par sa valeur octale         | Dépend de `ooo`  |
+
 <hr>
 
 ### **5. Opérateurs**
