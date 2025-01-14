@@ -285,15 +285,61 @@ int nbr_colonnes = sizeof(Nom_Tab[0]) / sizeof(Nom_Tab[0][0]);
 
 
 ### **10. Chaînes de Caractères**
-En C, les chaînes de caractères sont représentées par des **tableaux de caractères** et se terminent par un caractère nul (`'\0'`).
 
-- **Fonctions de `<string.h>`** :
-  - `strlen` : Longueur d'une chaîne.
-  - `strcpy`, `strncpy` : Copie de chaînes.
-  - `strcat`, `strncat` : Concaténation de chaînes.
-  - `strcmp`, `strncmp` : Comparaison de chaînes.
-  - `strchr` : Trouve une occurrence d'un caractère.
-  - `strstr` : Trouve une sous-chaîne.
+- **Fonctions de base (`<string.h>`)**
+
+| **Fonction** | **Syntaxe**              | **Description**                          |
+|--------------|--------------------------|------------------------------------------|
+| **`strlen`** | `strlen(str);`           | Longueur de `str` (sans `\0`).           |
+| **`strcpy`** | `strcpy(dest, src);`     | Copie `src` dans `dest`.                 |
+| **`strncpy`**| `strncpy(dest, src, n);` | Copie `n` caractères de `src` dans `dest`.|
+| **`strcat`** | `strcat(dest, src);`     | Ajoute `src` à la fin de `dest`.         |
+| **`strncat`**| `strncat(dest, src, n);` | Ajoute `n` caractères de `src` à `dest`. |
+| **`strcmp`** | `strcmp(str1, str2);`    | Compare `str1` et `str2` (0 si égales).  |
+| **`strncmp`**| `strncmp(str1, str2, n);`| Compare `n` caractères de `str1` et `str2`. |
+
+
+
+- **Fonctions de conversion (`<stdlib.h>`)**
+
+| **Fonction** | **Syntaxe**              | **Description**                          |
+|--------------|--------------------------|------------------------------------------|
+| **`atoi`**   | `atoi(str);`             | Convertit `str` en entier (`int`).       |
+| **`atol`**   | `atol(str);`             | Convertit `str` en entier long (`long`). |
+| **`atof`**   | `atof(str);`             | Convertit `str` en flottant (`double`).  |
+
+
+
+- **Fonctions de manipulation de caractères (`<ctype.h>`)**
+
+| **Fonction** | **Syntaxe**              | **Description**                          |
+|--------------|--------------------------|------------------------------------------|
+| **`isalpha`**| `isalpha(c);`            | Vérifie si `c` est une lettre (A-Z, a-z).|
+| **`isdigit`**| `isdigit(c);`            | Vérifie si `c` est un chiffre (0-9).     |
+| **`isalnum`**| `isalnum(c);`            | Vérifie si `c` est une lettre ou un chiffre. |
+| **`islower`**| `islower(c);`            | Vérifie si `c` est une minuscule.        |
+| **`isupper`**| `isupper(c);`            | Vérifie si `c` est une majuscule.        |
+| **`tolower`**| `tolower(c);`            | Convertit `c` en minuscule.              |
+| **`toupper`**| `toupper(c);`            | Convertit `c` en majuscule.              |
+
+
+
+- **Fonctions d'entrée/sortie (`<stdio.h>`)**
+
+| **Fonction** | **Syntaxe**              | **Description**                          |
+|--------------|--------------------------|------------------------------------------|
+| **`fgets`**  | `fgets(str, n, stream);` | Lit une ligne de `stream` dans `str` (max `n` caractères). |
+| **`fputs`**  | `fputs(str, stream);`    | Écrit `str` dans `stream`.               |
+
+
+- **En-têtes à inclure :**
+```c
+#include <string.h>  // Pour les fonctions de chaînes
+#include <stdlib.h>  // Pour atoi, atol, atof
+#include <ctype.h>   // Pour isalpha, isdigit, etc.
+#include <stdio.h>   // Pour fgets, fputs
+```
+
 <hr>
 
 ### **11. Fonctions**
