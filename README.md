@@ -352,14 +352,40 @@ Type_retour Nom_fonction(arguments) {
 <hr>
 
 ### **12. Pointeurs**
-```c
-// Déclaration d'un pointeur
-Type *pointeur = &variable;
 
-// Opérateurs des pointeurs
-& // pour obtenir l'adresse
-* // pour accéder au contenu de l'adresse
+- **Déclaration d'un pointeur**
+```c
+type *ptr;
 ```
+
+- **Initialisation d'un pointeur**
+```c
+ptr = &variable;
+```
+
+
+- **Accès à la valeur pointée**
+```c
+*ptr;
+```
+
+- **Pointeur et tableaux**
+```c
+ptr = tableau;
+ptr[i];   // ou *(ptr + i)
+```
+
+- **Pointeur de pointeur**
+```c
+type **ptr;
+```
+
+- **Pointeur et fonctions**
+```c
+void f(type *ptr);
+return ptr;
+```
+
 <hr>
 
 ### **13. Allocation Dynamique de la Mémoire**
