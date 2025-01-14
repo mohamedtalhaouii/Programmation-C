@@ -390,16 +390,16 @@ return ptr;
 
 ### **13. Allocation Dynamique de la Mémoire**
 ```c
-// Allocation avec malloc
+// Alloue de la mémoire non initialisée
 Type *pointeur = malloc(taille * sizeof(Type));
 
-// Allocation avec calloc
+// Alloue et initialise la mémoire à 0
 Type *pointeur = calloc(nbr_elements, sizeof(Type));
 
-// Redimensionnement avec realloc
+// Redimensionne une zone mémoire allouée
 pointeur = realloc(pointeur, nouvelle_taille * sizeof(Type));
 
-// Libération de la mémoire
+// Libère la mémoire allouée
 free(pointeur);
 ```
 <hr>
