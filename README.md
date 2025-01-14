@@ -2,7 +2,7 @@
 
 1. [Types de Données](#1-types-de-données)
 2. [Déclaration de Variables](#2-déclaration-de-variables)
-3. [Entrée/Sortie](#3-entréesortie)
+3. [Lecture et écriture des données](#3-lecture-et-écriture-des-données)
 4. [Caractères d'Échappement](#4-caractères-déchappement)
 5. [Opérateurs](#5-opérateurs)
 6. [Structures Conditionnelles](#6-structures-conditionnelles)
@@ -52,11 +52,30 @@ const Type Nom_const = valeur;
 ```
 <hr>
 
-### **3. Entrée/Sortie**
-```c
-printf("format", variables); // Écriture sur la sortie standard
-scanf("format", &variables); // Lecture des variables
-```
+### **3. Lecture et écriture des données**
+
+- **Affichage formaté avec `printf`**
+
+| **Caractère** | **Type de donnée**               | **Exemple**                              |
+|---------------|----------------------------------|------------------------------------------|
+| **%d**        | Entier signé (int)               | `printf("%d", 42);` → `42`               |
+| **%f**        | Nombre à virgule flottante       | `printf("%.2f", 3.14);` → `3.14`         |
+| **%c**        | Caractère (char)                 | `printf("%c", 'A');` → `A`               |
+| **%s**        | Chaîne de caractères (char *)    | `printf("%s", "Hello");` → `Hello`       |
+| **%p**        | Adresse mémoire (pointeur)       | `printf("%p", &x);` → `0x7ffdfb2c`       |
+| **%%**        | Affiche le caractère `%`         | `printf("%%");` → `%`                    |
+
+
+- **Lecture formatée avec `scanf`**
+
+| **Caractère** | **Type de donnée**               | **Exemple**                              |
+|---------------|----------------------------------|------------------------------------------|
+| **%d**        | Entier signé (int)               | `scanf("%d", &x);` (lit un entier)       |
+| **%f**        | Nombre à virgule flottante       | `scanf("%f", &y);` (lit un float)        |
+| **%c**        | Caractère (char)                 | `scanf("%c", &c);` (lit un caractère)    |
+| **%s**        | Chaîne de caractères (char *)    | `scanf("%s", str);` (lit une chaîne)     |
+| **%p**        | Adresse mémoire (pointeur)       | `scanf("%p", &ptr);` (lit un pointeur)   |
+
 <hr>
 
 ### **4. Caractères d'Échappement**
