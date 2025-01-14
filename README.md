@@ -473,13 +473,11 @@ free(pointeur);
    typedef type_existant nouveau_nom;
    ```
 
-   - Exemple avec structure :
+   - Exemples :
      ```c
-     typedef struct {
-         int jour;
-         int mois;
-         int annee;
-     } date;
+    typedef int Entier;       // Entier est un synonyme de int
+    typedef float Reel;       // Reel est un synonyme de float
+    typedef char Caractere;   // Caractere est un synonyme de char
      ```
 
 <hr>
