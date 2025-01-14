@@ -115,7 +115,6 @@ scanf("format", &variables); // Lecture des variables
 | `\|\|`        | OU logique                          | `a \|\| b`          |
 | `!`           | NON logique (inverse)               | `!a`                |
 
----
 
 - **Opérateurs d'Affectation**
 
