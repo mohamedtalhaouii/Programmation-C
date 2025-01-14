@@ -56,6 +56,40 @@ const Type Nom_const = valeur;
 
 - **Affichage formaté avec `printf`**
 
+```c
+%[flags][largeur][.précision][modificateur]spécificateur
+```
+
+- **`flags`** (optionnel) : Contrôle l'alignement, le remplissage, etc.
+  - `-` : Alignement à gauche.
+  - `0` : Remplissage avec des zéros.
+  - `+` : Affiche le signe (+ ou -) pour les nombres.
+  - ` ` (espace) : Ajoute un espace pour les nombres positifs.
+  - `#` : Format alternatif (ex: `0x` pour les hexadécimaux).
+
+- **`largeur`** (optionnel) : Nombre minimal de caractères à afficher.
+  - Exemple : `%5d` → Affiche un entier avec une largeur minimale de 5.
+
+- **`.précision`** (optionnel) : Nombre de chiffres après la virgule pour les flottants, ou nombre maximal de caractères pour les chaînes.
+  - Exemple : `%.2f` → Affiche un flottant avec 2 chiffres après la virgule.
+  - Exemple : `%.5s` → Affiche uniquement les 5 premiers caractères d'une chaîne.
+
+- **`modificateur`** (optionnel) : Modifie la taille du type de donnée.
+  - `h` : `short` (ex: `%hd` pour un `short int`).
+  - `l` : `long` (ex: `%ld` pour un `long int`).
+  - `ll` : `long long` (ex: `%lld` pour un `long long int`).
+  - `L` : `long double` (ex: `%Lf` pour un `long double`).
+
+- **`spécificateur`** : Détermine le type de donnée.
+  - `d` ou `i` : Entier signé.
+  - `u` : Entier non signé.
+  - `f` : Flottant.
+  - `c` : Caractère.
+  - `s` : Chaîne de caractères.
+  - `p` : Pointeur.
+  - `%` : Affiche le caractère `%`.
+  
+
 | **Caractère** | **Type de donnée**               | **Exemple**                              |
 |---------------|----------------------------------|------------------------------------------|
 | **%d**        | Entier signé (int)               | `printf("%d", 42);` → `42`               |
@@ -68,6 +102,15 @@ const Type Nom_const = valeur;
 
 - **Lecture formatée avec `scanf`**
 
+```c
+%[*][largeur][modificateur]spécificateur
+```
+
+- **`*`** (optionnel) : Ignore la donnée lue (ne la stocke pas).
+- **`largeur`** (optionnel) : Nombre maximal de caractères à lire.
+- **`modificateur`** (optionnel) : Modifie la taille du type de donnée (comme pour `printf`).
+- **`spécificateur`** : Détermine le type de donnée (comme pour `printf`).
+
 | **Caractère** | **Type de donnée**               | **Exemple**                              |
 |---------------|----------------------------------|------------------------------------------|
 | **%d**        | Entier signé (int)               | `scanf("%d", &x);` (lit un entier)       |
@@ -75,6 +118,7 @@ const Type Nom_const = valeur;
 | **%c**        | Caractère (char)                 | `scanf("%c", &c);` (lit un caractère)    |
 | **%s**        | Chaîne de caractères (char *)    | `scanf("%s", str);` (lit une chaîne)     |
 | **%p**        | Adresse mémoire (pointeur)       | `scanf("%p", &ptr);` (lit un pointeur)   |
+
 
 <hr>
 
