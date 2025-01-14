@@ -474,11 +474,11 @@ free(pointeur);
    ```
 
    - Exemples :
-     ```c
+    ```c
     typedef int Entier;       // Entier est un synonyme de int
     typedef float Reel;       // Reel est un synonyme de float
     typedef char Caractere;   // Caractere est un synonyme de char
-     ```
+    ```
 
 <hr>
 
