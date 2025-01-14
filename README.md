@@ -1,4 +1,4 @@
-## **Résumé Complet du Langage C - Études**
+## **Résumé Complet du Langage C**
 
 1. [Types de Données](#1-types-de-données)
 2. [Déclaration de Variables](#2-déclaration-de-variables)
