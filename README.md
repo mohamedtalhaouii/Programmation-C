@@ -435,6 +435,18 @@ free(pointeur);
    } variables;
    ```
 
+- **Tableau Comparatif** entre les **unions** et les **structures** en C :
+
+| **Caractéristique**         | **Structure (`struct`)**                          | **Union (`union`)**                        |
+|-----------------------------|--------------------------------------------------|--------------------------------------------|
+| **Déclaration**             | `struct nom { type1 champ1; type2 champ2; ... };`| `union nom { type1 champ1; type2 champ2; ... };` |
+| **Taille en mémoire**       | Somme des tailles de tous les champs.            | Taille du plus grand champ.                |
+| **Utilisation de la mémoire**| Chaque champ a son propre espace mémoire.        | Tous les champs partagent le même espace mémoire. |
+| **Accès aux champs**        | Tous les champs sont accessibles simultanément.  | Un seul champ peut être utilisé à la fois. |
+| **Initialisation**          | Tous les champs peuvent être initialisés.        | Seul le premier champ peut être initialisé.|
+| **Utilisation typique**     | Représenter un objet avec plusieurs attributs.    | Représenter un type pouvant stocker un seul type de données à la fois. |
+
+
 <hr>
 
 ### **16. Énumérations**
