@@ -81,11 +81,54 @@ scanf("format", &variables); // Lecture des variables
 <hr>
 
 ### **5. Opérateurs**
-- **Arithmétiques** : `+`, `-`, `*`, `/`, `%`
-- **Affectation** : `=`, `+=`, `-=`, `*=`, `/=`, `%=`
-- **Incrémentation/Decrémentation** : `++`, `--`
-- **Comparaison** : `==`, `<`, `>`, `<=`, `>=`, `!=`
-- **Logiques** : `&&`, `||`, `!`
+
+- **Opérateurs Arithmétiques**
+
+| **Opérateur** | **Description**                     | **Exemple**         |
+|---------------|-------------------------------------|---------------------|
+| `+`           | Addition                            | `a + b`             |
+| `-`           | Soustraction                        | `a - b`             |
+| `*`           | Multiplication                      | `a * b`             |
+| `/`           | Division                            | `a / b`             |
+| `%`           | Modulo (reste de la division)       | `a % b`             |
+| `++`          | Incrémentation (ajoute 1)           | `a++` ou `++a`      |
+| `--`          | Décrémentation (soustrait 1)        | `a--` ou `--a`      |
+
+
+- **Opérateurs de Comparaison (Relationnels)**
+
+| **Opérateur** | **Description**                     | **Exemple**         |
+|---------------|-------------------------------------|---------------------|
+| `==`          | Égal à                              | `a == b`            |
+| `!=`          | Différent de                        | `a != b`            |
+| `>`           | Supérieur à                         | `a > b`             |
+| `<`           | Inférieur à                         | `a < b`             |
+| `>=`          | Supérieur ou égal à                 | `a >= b`            |
+| `<=`          | Inférieur ou égal à                 | `a <= b`            |
+
+
+- **Opérateurs Logiques**
+
+| **Opérateur** | **Description**                     | **Exemple**         |
+|---------------|-------------------------------------|---------------------|
+| `&&`          | ET logique                          | `a && b`            |
+| `\|\|`        | OU logique                          | `a \|\| b`          |
+| `!`           | NON logique (inverse)               | `!a`                |
+
+---
+
+- **Opérateurs d'Affectation**
+
+| **Opérateur** | **Description**                     | **Exemple**         |
+|---------------|-------------------------------------|---------------------|
+| `=`           | Affectation simple                  | `a = b`             |
+| `+=`          | Ajoute et affecte                   | `a += b` (équivaut à `a = a + b`) |
+| `-=`          | Soustrait et affecte                | `a -= b` (équivaut à `a = a - b`) |
+| `*=`          | Multiplie et affecte                | `a *= b` (équivaut à `a = a * b`) |
+| `/=`          | Divise et affecte                   | `a /= b` (équivaut à `a = a / b`) |
+| `%=`          | Modulo et affecte                   | `a %= b` (équivaut à `a = a % b`) |
+
+
 <hr>
 
 ### **6. Structures Conditionnelles**
