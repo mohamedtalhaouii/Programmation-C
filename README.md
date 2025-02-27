@@ -344,9 +344,9 @@ int nbr_colonnes = sizeof(Nom_Tab[0]) / sizeof(Nom_Tab[0][0]);
 
 ### **11. Fonctions**
 ```c
-Type_retour Nom_fonction(arguments) {
-    instructions;
-    return résultat;
+Type_retour nom_fonction(Type param1, Type param2) {
+    // Code
+    return valeur;
 }
 ```
 <hr>
