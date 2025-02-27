@@ -2,7 +2,7 @@
 
 1. [Types de Données](#1-types-de-données)
 2. [Déclaration de Variables](#2-déclaration-de-variables)
-3. [Lecture et écriture des données](#3-lecture-et-écriture-des-données)
+3. [Lecture et Écriture des données](#3-lecture-et-écriture-des-données)
 4. [Caractères d'Échappement](#4-caractères-déchappement)
 5. [Opérateurs](#5-opérateurs)
 6. [Structures Conditionnelles](#6-structures-conditionnelles)
@@ -52,7 +52,7 @@ const Type Nom_const = valeur;
 ```
 <hr>
 
-### **3. Lecture et écriture des données**
+### **3. Lecture et Écriture des données**
 
 - **Affichage formaté avec `printf`**
 
