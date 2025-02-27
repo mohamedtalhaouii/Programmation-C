@@ -1,25 +1,25 @@
-## **Résumé Complet du Langage C**
+## **Plan du Contenu :**
 
-1. [Types de Données](#1-types-de-données)
-2. [Déclaration de Variables](#2-déclaration-de-variables)
-3. [Lecture et Écriture des données](#3-lecture-et-écriture-des-données)
-4. [Caractères d'Échappement](#4-caractères-déchappement)
-5. [Opérateurs](#5-opérateurs)
-6. [Structures Conditionnelles](#6-structures-conditionnelles)
-7. [Structures Répétitives](#7-structures-répétitives)
-8. [Contrôle des Boucles](#8-contrôle-des-boucles)
-9. [Tableaux](#9-tableaux)
-10. [Chaînes de Caractères](#10-chaînes-de-caractères)
-11. [Fonctions](#11-fonctions)
-12. [Pointeurs](#12-pointeurs)
-13. [Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)
-14. [Structures](#14-structures)
-15. [Unions](#15-unions)
-16. [Énumérations](#16-énumérations)
-17. [Types synonymes](#17-types-synonymes)
-18. [Champs de bits](#18-champs-de-bits)
-19. [Taille d'une structure](#19-taille-dune-structure)
-20. [Bibliothèques](#20-bibliothèques)
+- **[Types de Données](#1-types-de-données)**
+- **[Déclaration de Variables](#2-déclaration-de-variables)**
+- **[Lecture et Écriture des données](#3-lecture-et-écriture-des-données)**
+- **[Caractères d'Échappement](#4-caractères-déchappement)**
+- **[Opérateurs](#5-opérateurs)**
+- **[Structures Conditionnelles](#6-structures-conditionnelles)**
+- **[Structures Répétitives](#7-structures-répétitives)**
+- **[Contrôle des Boucles](#8-contrôle-des-boucles)**
+- **[Tableaux](#9-tableaux)**
+- **[Chaînes de Caractères](#10-chaînes-de-caractères)**
+- **[Fonctions](#11-fonctions)**
+- **[Pointeurs](#12-pointeurs)**
+- **[Allocation Dynamique de la Mémoire](#13-allocation-dynamique-de-la-mémoire)**
+- **[Structures](#14-structures)**
+- **[Unions](#15-unions)**
+- **[Énumérations](#16-énumérations)**
+- **[Types synonymes](#17-types-synonymes)**
+- **[Champs de bits](#18-champs-de-bits)**
+- **[Taille d'une structure](#19-taille-dune-structure)**
+- **[Bibliothèques](#20-bibliothèques)**
 
 <hr>
 
