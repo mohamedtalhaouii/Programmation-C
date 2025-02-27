@@ -23,7 +23,7 @@
 
 <hr>
 
-### **1. Types de Données**
+## **1. Types de Données**
 
 | **Type**            | **Taille (en octets)** | **Description**                                                                 |
 |----------------------|-----------------------|---------------------------------------------------------------------------------|
@@ -45,14 +45,14 @@
 
 <hr>
 
-### **2. Déclaration de Variables**
+## **2. Déclaration de Variables**
 ```c
 Type Nom_var = valeur;
 const Type Nom_const = valeur;
 ```
 <hr>
 
-### **3. Lecture et Écriture des données**
+## **3. Lecture et Écriture des données**
 
 - **Affichage formaté avec `printf`**
 
@@ -122,7 +122,7 @@ const Type Nom_const = valeur;
 
 <hr>
 
-### **4. Caractères d'Échappement**
+## **4. Caractères d'Échappement**
 
 | **Séquence** | **Description**                                   | **Valeur ASCII** |
 |--------------|---------------------------------------------------|------------------|
@@ -143,7 +143,7 @@ const Type Nom_const = valeur;
 
 <hr>
 
-### **5. Opérateurs**
+## **5. Opérateurs**
 
 - **Opérateurs Arithmétiques**
 
@@ -193,7 +193,7 @@ const Type Nom_const = valeur;
 
 <hr>
 
-### **6. Structures Conditionnelles**
+## **6. Structures Conditionnelles**
 ```c
 // Condition simple
 if (condition) {
@@ -231,7 +231,7 @@ switch(expression) {
 ```
 <hr>
 
-### **7. Structures Répétitives**
+## **7. Structures Répétitives**
 ```c
 // Boucle for
 for (initialisation; condition; incrément) {
@@ -250,7 +250,7 @@ do {
 ```
 <hr>
 
-### **8. Contrôle des Boucles**
+## **8. Contrôle des Boucles**
 ```c
 // break : interrompt immédiatement la boucle
 break;
@@ -263,7 +263,7 @@ goto;
 ```
 <hr>
 
-### **9. Tableaux**
+## **9. Tableaux**
 - **Déclaration d'une Tableau :**
 ```c
 // Tableau à une dimension
@@ -284,7 +284,7 @@ int nbr_colonnes = sizeof(Nom_Tab[0]) / sizeof(Nom_Tab[0][0]);
 <hr>
 
 
-### **10. Chaînes de Caractères**
+## **10. Chaînes de Caractères**
 
 - **Fonctions de base (`<string.h>`)**
 
@@ -342,7 +342,7 @@ int nbr_colonnes = sizeof(Nom_Tab[0]) / sizeof(Nom_Tab[0][0]);
 
 <hr>
 
-### **11. Fonctions**
+## **11. Fonctions**
 ```c
 Type_retour nom_fonction(Type param1, Type param2) {
     // Code
@@ -351,7 +351,7 @@ Type_retour nom_fonction(Type param1, Type param2) {
 ```
 <hr>
 
-### **12. Pointeurs**
+## **12. Pointeurs**
 
 - **Déclaration d'un pointeur**
 ```c
@@ -388,7 +388,7 @@ return ptr;
 
 <hr>
 
-### **13. Allocation Dynamique de la Mémoire**
+## **13. Allocation Dynamique de la Mémoire**
 ```c
 // Alloue de la mémoire non initialisée
 Type *pointeur = malloc(taille * sizeof(Type));
@@ -404,7 +404,7 @@ free(pointeur);
 ```
 <hr>
 
-### **14. Structures**
+## **14. Structures**
    ```c
    struct nom_structure {
        type1 champ1;
@@ -427,7 +427,7 @@ free(pointeur);
      ```
 <hr>
 
-### **15. Unions**
+## **15. Unions**
    ```c
    union nom_union {
        type1 champ1;
@@ -449,7 +449,7 @@ free(pointeur);
 
 <hr>
 
-### **16. Énumérations**
+## **16. Énumérations**
    ```c
    enum nom_enum {
        CONST1,
@@ -468,7 +468,7 @@ free(pointeur);
      ```
 <hr>
 
-### **17. Types synonymes**
+## **17. Types synonymes**
    ```c
    typedef type_existant nouveau_nom;
    ```
@@ -482,7 +482,7 @@ free(pointeur);
 
 <hr>
 
-### **18. Champs de bits**
+## **18. Champs de bits**
    ```c
    struct {
        unsigned int champ1 : nombre_de_bits;
@@ -491,7 +491,7 @@ free(pointeur);
    ```
 <hr>
 
-### **19. Taille d'une structure**
+## **19. Taille d'une structure**
    ```c
    struct nom_structure {
         type1 champ1;
@@ -503,7 +503,7 @@ free(pointeur);
 
 <hr>
 
-### **20. Bibliothèques**
+## **20. Bibliothèques**
 Les bibliothèques standard du C fournissent des fonctions pour de nombreuses tâches courantes.
 
 - **`<stdio.h>`** : Entrée/sortie standard.
