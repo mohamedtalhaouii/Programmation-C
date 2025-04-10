@@ -331,15 +331,6 @@ int nbr_colonnes = sizeof(Nom_Tab[0]) / sizeof(Nom_Tab[0][0]);
 | **`fgets`**  | `fgets(str, n, stream);` | Lit une ligne de `stream` dans `str` (max `n` caractères). |
 | **`fputs`**  | `fputs(str, stream);`    | Écrit `str` dans `stream`.               |
 
-
-- **En-têtes à inclure :**
-```c
-#include <string.h>  // Pour les fonctions de chaînes
-#include <stdlib.h>  // Pour atoi, atol, atof
-#include <ctype.h>   // Pour isalpha, isdigit, etc.
-#include <stdio.h>   // Pour fgets, fputs
-```
-
 <hr>
 
 ## **11. Fonctions**
