@@ -19,7 +19,7 @@
 - **[Types Synonymes](#17-types-synonymes)**
 - **[Champs de Bits](#18-champs-de-bits)**
 - **[Taille d'une Structure](#19-taille-dune-structure)**
-- **[Gestion des Fichiers](#)**
+- **[Gestion des Fichiers](#20-gestion-des-fichiers)**
 - **[Bibliothèques](#21-bibliothèques)**
 
 ---
