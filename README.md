@@ -16,10 +16,11 @@
 - **[Structures](#14-structures)**
 - **[Unions](#15-unions)**
 - **[Énumérations](#16-énumérations)**
-- **[Types synonymes](#17-types-synonymes)**
-- **[Champs de bits](#18-champs-de-bits)**
-- **[Taille d'une structure](#19-taille-dune-structure)**
-- **[Bibliothèques](#20-bibliothèques)**
+- **[Types Synonymes](#17-types-synonymes)**
+- **[Champs de Bits](#18-champs-de-bits)**
+- **[Taille d'une Structure](#19-taille-dune-structure)**
+- **[Gestion des Fichiers](#)**
+- **[Bibliothèques](#21-bibliothèques)**
 
 ---
 
@@ -463,7 +464,7 @@ free(pointeur);
      ```
 <hr>
 
-## **17. Types synonymes**
+## **17. Types Synonymes**
    ```c
    typedef type_existant nouveau_nom;
    ```
@@ -477,7 +478,7 @@ free(pointeur);
 
 <hr>
 
-## **18. Champs de bits**
+## **18. Champs de Bits**
    ```c
    struct {
        unsigned int champ1 : nombre_de_bits;
@@ -486,7 +487,7 @@ free(pointeur);
    ```
 <hr>
 
-## **19. Taille d'une structure**
+## **19. Taille d'une Structure**
    ```c
    struct nom_structure {
         type1 champ1;
@@ -495,10 +496,72 @@ free(pointeur);
 
     printf("Taille de la structure : %zu octets\n", sizeof(variable));
    ```
+<hr>
+
+## **20. Gestion des Fichiers**
+La gestion des fichiers permet de lire, écrire, créer ou modifier des fichiers sur le disque en utilisant les fonctions de la bibliothèque standard `<stdio.h>`.
+
+- **Ouverture d’un fichier**
+```c
+FILE* fichier = fopen("nom_fichier.txt", "mode");
+```
+
+> **Modes d’ouverture :**
+> | Mode  | Description                        |
+> |-------|------------------------------------|
+> | `"r"` | Lecture (fichier existant)         |
+> | `"w"` | Écriture (crée ou écrase)          |
+> | `"a"` | Ajout (écriture en fin de fichier) |
+> | `"r+"`| Lecture + écriture                 |
+> | `"w+"`| Lecture + écriture (efface)        |
+> | `"a+"`| Lecture + ajout                    |
+
+
+- **Écriture :**
+```c
+fprintf(fichier, "Texte %d\n", valeur);
+fputc('A', fichier);
+fputs("Chaîne", fichier);
+```
+
+- **Lecture :**
+```c
+fscanf(fichier, "%d", &valeur);
+fgetc(fichier);
+fgets(chaine, taille, fichier);
+```
+
+
+- **Fermeture d’un fichier**
+```c
+fclose(fichier);
+```
+
+- **Vérification d’ouverture**
+> Toujours vérifier si le fichier a été ouvert correctement
+```c
+if (fichier == NULL) {
+    printf("Erreur lors de l’ouverture du fichier.\n");
+}
+```
+
+- **Autres fonctions utiles**
+
+| Fonction        | Utilité                                |
+|----------------|-----------------------------------------|
+| `feof(f)`       | Teste la fin de fichier                 |
+| `ferror(f)`     | Vérifie les erreurs                     |
+| `rewind(f)`     | Remet le curseur au début               |
+| `fflush(f)`     | Vide le tampon du fichier               |
+| `remove("nom")` | Supprime un fichier                     |
+| `rename(old,new)`| Renomme un fichier                     |
+
+
+
 
 <hr>
 
-## **20. Bibliothèques**
+## **21. Bibliothèques**
 Les bibliothèques standard du C fournissent des fonctions pour de nombreuses tâches courantes.
 
 - **`<stdio.h>`** : Entrée/sortie standard.
