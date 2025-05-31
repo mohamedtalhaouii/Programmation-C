@@ -20,8 +20,8 @@
 - **[Champs de Bits](#18-champs-de-bits)**
 - **[Taille d'une Structure](#19-taille-dune-structure)**
 - **[Gestion des Fichiers](#20-gestion-des-fichiers)**
-- **[Bibliothèques](#21-bibliothèques)**
-- **[Programmation Modulaire](#22-programmation-modulaire)**
+- **[Programmation Modulaire](#21-programmation-modulaire)**
+- **[Bibliothèques](#22-bibliothèques)**
 
 ---
 
@@ -591,39 +591,9 @@ if (fichier == NULL) {
 | `remove("nom")` | Supprime un fichier                     |
 | `rename(old,new)`| Renomme un fichier                     |
 
-
-
-
-<hr>
-
-## **21. Bibliothèques**
-Les bibliothèques standard du C fournissent des fonctions pour de nombreuses tâches courantes.
-
-- **`<stdio.h>`** : Entrée/sortie standard.
-  - Fonctions : `printf`, `scanf`, `fopen`, `fclose`, etc.
-
-- **`<stdlib.h>`** : Gestion de la mémoire, nombres aléatoires et conversions.
-  - Fonctions : `malloc`, `free`, `rand`, `exit`, etc.
-
-- **`<string.h>`** : Manipulation des chaînes de caractères.
-  - Fonctions : `strlen`, `strcpy`, `strcat`, `strcmp`, etc.
-
-- **`<math.h>`** : Opérations mathématiques avancées.
-  - Fonctions : `pow`, `sqrt`, `sin`, `cos`, `log`, etc.
-
-- **`<ctype.h>`** : Classification et manipulation des caractères.
-  - Fonctions : `isalpha`, `isdigit`, `toupper`, `tolower`, etc.
-
-- **`<time.h>`** : Gestion du temps et des dates.
-  - Fonctions : `time`, `clock`, `difftime`, `strftime`, etc.
-
-- **`<stdbool.h>`** : Type booléen (`true`, `false`).
-
-- **`<limits.h>`** et **`<float.h>`** : Définit les limites des types numériques.
-
 ---
 
-## **22. Programmation Modulaire**  
+## **21. Programmation Modulaire**  
 
 
 - **Fichier d'en-tête (`*.h`)** :  
@@ -653,6 +623,33 @@ Les bibliothèques standard du C fournissent des fonctions pour de nombreuses t�
     - `#include "fichier.h"` : Inclusion locale  
     - `#include <fichier.h>` : Inclusion système  
     - `#ifndef` / `#define` / `#endif` : Garde contre les inclusions multiples  
+
+---
+
+## **22. Bibliothèques**
+Les bibliothèques standard du C fournissent des fonctions pour de nombreuses tâches courantes.
+
+- **`<stdio.h>`** : Entrée/sortie standard.
+  - Fonctions : `printf`, `scanf`, `fopen`, `fclose`, etc.
+
+- **`<stdlib.h>`** : Gestion de la mémoire, nombres aléatoires et conversions.
+  - Fonctions : `malloc`, `free`, `rand`, `exit`, etc.
+
+- **`<string.h>`** : Manipulation des chaînes de caractères.
+  - Fonctions : `strlen`, `strcpy`, `strcat`, `strcmp`, etc.
+
+- **`<math.h>`** : Opérations mathématiques avancées.
+  - Fonctions : `pow`, `sqrt`, `sin`, `cos`, `log`, etc.
+
+- **`<ctype.h>`** : Classification et manipulation des caractères.
+  - Fonctions : `isalpha`, `isdigit`, `toupper`, `tolower`, etc.
+
+- **`<time.h>`** : Gestion du temps et des dates.
+  - Fonctions : `time`, `clock`, `difftime`, `strftime`, etc.
+
+- **`<stdbool.h>`** : Type booléen (`true`, `false`).
+
+- **`<limits.h>`** et **`<float.h>`** : Définit les limites des types numériques.
 
 ---
 
