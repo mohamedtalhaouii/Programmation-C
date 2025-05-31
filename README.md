@@ -21,6 +21,7 @@
 - **[Taille d'une Structure](#19-taille-dune-structure)**
 - **[Gestion des Fichiers](#20-gestion-des-fichiers)**
 - **[Bibliothèques](#21-bibliothèques)**
+- **[Programmation Modulaire](#22-programmation-modulaire)**
 
 ---
 
@@ -620,6 +621,39 @@ Les bibliothèques standard du C fournissent des fonctions pour de nombreuses t�
 
 - **`<limits.h>`** et **`<float.h>`** : Définit les limites des types numériques.
 
-<hr>
+---
+
+## **22. Programmation Modulaire**  
+
+
+- **Fichier d'en-tête (`*.h`)** :  
+  ```c
+    #ifndef MODULE_H  // Garde contre les inclusions multiples
+    #define MODULE_H
+    
+    // Déclarations (fonctions, constantes, types)  
+    
+    #endif
+  ```  
+
+- **Fichier source (`*.c`)** :  
+  ```c
+  #include "nom_module.h"  // Inclusion du fichier d'en-tête correspondant
+
+  // Implémentations des fonctions  
+  ```  
+
+- **Compilation**  
+    ```bash
+    gcc -c module.c -o module.o  # Compile le module
+    gcc main.c module.o -o programme  # Lie les fichiers objets
+    ```  
+
+- **Directives Clés**  
+    - `#include "fichier.h"` : Inclusion locale  
+    - `#include <fichier.h>` : Inclusion système  
+    - `#ifndef` / `#define` / `#endif` : Garde contre les inclusions multiples  
+
+---
 
 <h3 align="center"> 🧑🏻‍💻 | Made By : <a href="https://github.com/mohamedtalhaouii" target="_blank">Mohamed Talhaoui</a></h3>
