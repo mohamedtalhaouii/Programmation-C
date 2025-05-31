@@ -385,6 +385,37 @@ void fonction(type *parametre) {
 fonction(&variable);
 ```
 
+
+- **Pointeurs constants**
+
+    - `const type *ptr`
+    
+        - **Valeur pointée constante** (lecture seule)
+        - L’adresse peut changer    
+        - ```c
+            *ptr = val;   // ❌ interdit
+            ptr = autre;  // ✅ autorisé
+            ```
+    
+    - `type *const ptr`
+    
+        - **Adresse constante**
+        - La valeur pointée est modifiable
+        - ```c
+            *ptr = val;   // ✅ autorisé
+            ptr = autre;  // ❌ interdit
+            ```
+    
+    - `const type *const ptr`
+        
+        - **Adresse et valeur pointée constantes**
+        - ```c
+            *ptr = val;   // ❌ interdit
+            ptr = autre;  // ❌ interdit
+            ```
+
+    > **Astuce** : lire **de droite à gauche** pour savoir ce qui est constant.
+
 <hr>
 
 ## **13. Allocation Dynamique de la Mémoire**
