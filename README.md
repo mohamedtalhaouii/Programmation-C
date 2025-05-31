@@ -378,8 +378,11 @@ type **ptr;
 
 - **Pointeur et fonctions**
 ```c
-void f(type *ptr);
-return ptr;
+void fonction(type *parametre) {
+    // modification via *parametre
+}
+// Appel
+fonction(&variable);
 ```
 
 <hr>
