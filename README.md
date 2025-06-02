@@ -596,33 +596,86 @@ if (fichier == NULL) {
 ## **21. Programmation Modulaire**  
 
 
-- **Fichier d'en-tête (`*.h`)** :  
+
+## **21. Programmation Modulaire**
+
+- **Fichier d'En-Tête (`*.h`)** :
+
   ```c
-    #ifndef MODULE_H  // Garde contre les inclusions multiples
-    #define MODULE_H
-    
-    // Déclarations (fonctions, constantes, types)  
-    
-    #endif
-  ```  
+  #ifndef MODULE1_H  // Garde contre les inclusions multiples
+  #define MODULE1_H
 
-- **Fichier source (`*.c`)** :  
+  // Déclarations (fonctions, constantes, types) pour module1
+
+  #endif
+  ```
+
   ```c
-  #include "nom_module.h"  // Inclusion du fichier d'en-tête correspondant
+  #ifndef MODULE2_H
+  #define MODULE2_H
 
-  // Implémentations des fonctions  
-  ```  
+  // Déclarations (fonctions, constantes, types) pour module2
 
-- **Compilation**  
+  #endif
+  ```
+
+  - Un fichier `.h` par module : `module1.h`, `module2.h`
+  - Chaque fichier utilise ses propres gardes (`#ifndef MODULE1_H`, etc.)
+
+- **Fichier Source (`*.c`)** :
+
+  ```c
+  #include "module1.h"  // Inclusion du fichier d'en-tête correspondant
+
+  // Implémentations des fonctions du module1
+  ```
+
+  ```c
+  #include "module2.h"  // Inclusion du fichier d'en-tête correspondant
+
+  // Implémentations des fonctions du module2
+  ```
+
+  - Un fichier `.c` pour chaque module : `module1.c`, `module2.c`
+  - Ne jamais inclure un fichier `.c` dans un autre fichier `.c`
+
+- **Fichier Principal (`main.c`)** :
+
+  ```c
+  #include "module1.h"
+  #include "module2.h"
+
+  int main() {
+      // Appels aux fonctions de module1 et module2
+  }
+  ```
+
+- **Compilation avec plusieurs modules :**
+
+  ```bash
+  gcc -c module1.c -o module1.o
+  gcc -c module2.c -o module2.o
+  gcc -c main.c -o main.o
+  gcc main.o module1.o module2.o -o programme
+  ```
+
+  - Compilation séparée des modules (`.c → .o`)
+  - Édition de lien finale avec tous les objets (`.o`)
+
+- **Compilation Directe :**
+
     ```bash
-    gcc -c module.c -o module.o  # Compile le module
-    gcc main.c module.o -o programme  # Lie les fichiers objets
-    ```  
+    gcc main.c module1.c module2.c -o programme
+    ```
+    
+    - Compile les trois fichiers `.c` directement sans générer de `.o` intermédiaires,
 
-- **Directives Clés**  
-    - `#include "fichier.h"` : Inclusion locale  
-    - `#include <fichier.h>` : Inclusion système  
-    - `#ifndef` / `#define` / `#endif` : Garde contre les inclusions multiples  
+
+- **Directives Clés :**
+
+  - `#include "fichier.h"` : Inclusion locale (dans le projet)
+  - `#include <fichier.h>` : Inclusion système (ex. `<stdio.h>`)
+  - `#ifndef` / `#define` / `#endif` : Protection contre les inclusions multiples
 
 ---
 
