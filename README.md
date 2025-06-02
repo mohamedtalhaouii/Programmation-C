@@ -595,10 +595,6 @@ if (fichier == NULL) {
 
 ## **21. Programmation Modulaire**  
 
-
-
-## **21. Programmation Modulaire**
-
 - **Fichier d'En-Tête (`*.h`)** :
 
   ```c
