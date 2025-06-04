@@ -195,6 +195,21 @@ const Type Nom_const = valeur;
 | `*=`          | Multiplie et affecte                | `a *= b` (équivaut à `a = a * b`) |
 | `/=`          | Divise et affecte                   | `a /= b` (équivaut à `a = a / b`) |
 | `%=`          | Modulo et affecte                   | `a %= b` (équivaut à `a = a % b`) |
+| `&=`          | ET binaire et affecte               | `a &= b` (équivaut à `a = a & b`) |
+| `^=`          | OU exclusif binaire et affecte      | `a ^= b` (équivaut à `a = a ^ b`) |
+| `>>=`         | Décalage à droite et affecte        | `a >>= b` (équivaut à `a = a >> b`)| 
+| `<<=`         | Décalage à gauche et affecte        | `a <<= b` (équivaut à `a = a << b`) |
+
+
+- **Opérateurs Bit à Bit**
+
+| **Opérateur** | **Description**                          | **Exemple** |
+| ------------- | ---------------------------------------- | ----------- |
+| `&`           | ET binaire                               | `a & b`     |
+| `^`           | OU exclusif (XOR) binaire                | `a ^ b`     |
+| `~`           | NON binaire (inversion de tous les bits) | `~a`        |
+| `<<`          | Décalage des bits à gauche               | `a << 2`    |
+| `>>`          | Décalage des bits à droite               | `a >> 2`    |
 
 
 <hr>
